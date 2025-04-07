@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 5px solid #26ED6D;
+      }
+
+      .box {
+        flex: 0 0 300px;
+        height: 120px;
+        background-color: #2669ED;
+        margin: 5px;
+        font-size: large;
+        color: #26ED6D;
+        box-sizing: border-box;
+        padding: 2px;
+        margin: 2px;
+        font-size: small;
+      }
+      h1 {
+        width: 100%;
+        background-color: #26ED6D;
+        color: #2669ED;
+        text-align: center;
+        font-size: xx-large;
+      }
+      .animal_pic {
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .cocktailInfo {
+        float: right;
+        margin-right: 3px;
+        font-size: small;
+        font-weight: bold;
+        width: 50%;
+      }
+    </style>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="drink_info.js"></script>
+    <script src="drink_info_alt.js"></script>
+  </head>
+  <body>
+    <h1>Choose your Cocktail</h1>
+    <p>Click for calories, mouse over for the full recipe</p>
+
+    <div class="wrapper">
+    </div>
+  </body>
+</html>
